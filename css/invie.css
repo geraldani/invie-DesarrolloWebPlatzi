@@ -1,0 +1,244 @@
+body{
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#portada h1{/*.titulo*/
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 10px;
+	margin-top: 70px;
+	line-height: 1;
+}
+
+#portada h2{/*.title-a*/
+	font-size:20px;
+	margin: 0 0 20px 0;
+}
+
+#contenedor_guitarras h2{/*nuestras guitarras*/
+	font-size: 35px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Titulo de los articulos*/
+.titulo_art{
+	font-size: 50px;
+}
+
+.fondo{
+	background-image: url('../images/background.png');
+	background-size: cover;
+}
+
+#portada{
+	color: white;
+	padding: 20px;
+}
+
+#contenedor_guitarras, #contenido-portada, #contenido-footer, header, main{
+	width: 800px;
+	margin: auto;
+}
+
+.subrayado{
+	text-decoration: underline;
+}
+
+#contenedor_guitarras{ /*bloque section donde van las dos guitarras*/
+	color: #1f313c;
+}
+
+.guitarra{/* clase de lo articles*/
+	border: 1px solid #1f313c;
+	margin-bottom: 50px;
+	padding: 10px;
+	border-radius: 10px;
+	padding-bottom: 0; 
+	position: relative;
+}
+
+.guitarra ol{
+	padding:0;
+	list-style-position: inside;
+	margin-top:0;
+}
+
+.titulo_art{
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.contenido-guit{
+	margin-left: 350px;
+	position: relative;
+	bottom:40px;
+}
+header{
+	position: relative;
+	padding-top: 20px;
+}
+nav {/* menu principal*/
+	font-size: 17px;
+	position: absolute;
+	right: 0;
+}
+
+/*.menu, .menu li, .logotipo*/
+nav, nav li, header figure {
+	display: inline-block;
+}
+
+header figure{
+	margin:0 0 30px 0;
+}
+/*.menu li*/
+nav li{
+	margin-left: 25px;
+}
+nav li a, p a{
+	text-decoration: none;
+	color: white;
+}
+
+nav li::before{
+	content: "• ";
+	color: white;
+}
+
+nav li a:hover, p a:hover{
+	text-decoration: underline;
+}
+nav li a:active {
+	color: silver;
+}
+
+nav ul{
+	padding: 0;
+}
+
+article img[alt="Guitarra acustica"]{
+	float: right;
+	width: 350px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+article img[alt="Guitarra clasica"]{
+	float: left;
+	width: 350px;
+}
+
+footer{
+	background: #1f313c;
+	color: white;
+	padding-top: 30px;
+	font-size: 90%;
+}
+footer img{
+	width: 150px;
+}
+
+#contenido-footer{
+	display: flex;
+	justify-content: space-between;
+}
+#contacto img{
+	display: block;
+	margin: 20px 0;
+}
+#contacto p{
+	display: inline-block;
+}
+#contacto img+p{
+	margin-right: 10px;
+}
+#formulario{
+	display: flex;
+}
+#col1{
+	margin-right: 20px;
+}
+#col2 *{
+	display: block;
+}
+#checkbox{
+	margin-top: 10px;
+}
+input[type="text"], input[type="email"]{
+	width:100%;
+	margin-bottom: 10px
+}
+input[type="checkbox"], input[type="radio"]{
+	margin: 5px;
+}
+input, textarea{
+	border: none;
+	margin-top: 5px;
+}
+
+input:focus, textarea:focus{
+	background: silver;
+	border: none;
+}
+.boton{
+	margin-bottom: 70px;
+	margin-top: 20px;
+	padding: 10px 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 10px;
+	color: white;
+	background: linear-gradient(to right, rgb(255,107,80) , rgb(254,52,78));
+	border: none;
+}
+
+/* unvisited link */
+.boton:link {
+	background: #FF0000;
+}
+
+/* visited link */
+.boton:visited {
+	background: #00FF00;
+}
+
+.boton:focus {
+	outline: none;
+	/*background: orange;
+	color: black;*/
+}
+
+/* mouse over link */
+.boton:hover {
+	background: linear-gradient(to left, rgb(255,107,80) , rgb(254,52,78));
+	cursor: pointer;
+}
+
+/* selected link */
+.boton:active {
+	background: silver;
+	color:black;
+}
+
+/*estilos de la pagina precios*/
+table{
+	width: 100%;
+	border: 1px solid #1f313c;
+	border-collapse: collapse;
+	margin: 60px 0;
+}
+thead{
+	background: #1f313c;
+	color: white;
+}
+th, td{
+	text-align: left;
+	border: 1px solid #1f313c;
+	padding: 20px;	
+}
+th{
+	padding: 10px 20px;
+}
